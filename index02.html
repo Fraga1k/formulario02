@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionários</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+  .container input[type="text"],
+  .container input[type="email"],
+  .container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+<body>
+  <div class="container">
+    <h2>Cadastro de Funcionários</h2>
+    <form>
+      <input type="text" name="CPF" placeholder="CPF" required>
+      <input type="text" name="Nome" placeholder="Nome" required>
+      <input type="text" name="Data de nascimento" placeholder="Data de nascimento" required>
+      <input type="text" name="Endereço" placeholder="Endereço" required>
+      <input type="text" name="Cidade" placeholder="Cidade" required>
+      <input type="text" name="Telefone" placeholder="Telefone" required>
+      
+      <div class="gender-input">
+        <div class="gender-title">
+            <h4>Sexo</h4>
+        </div>
+      <input type="radio" id="Sexo" name="Sexo" placeholder="Sexo" required>
+      <label form="Sexo">M</label>
+      
+      <input type="radio" id="Sexo" name="Sexo" placeholder="Sexo" required>
+      <label form="Sexo">F</label>
+      <input type="text" name="Bairro" placeholder="Bairro" required>
+    
+      <select name="Estado" required>
+      <option value="">Estado</option>
+      <option value="AL">AL</option>
+      <option value="AP">AP</option>
+      <option value="AM">AM</option>
+      <option value="BA">BA</option>
+      <option value="CE">CE</option>
+      <option value="ES">ES</option>
+      <option value="GO">GO</option>
+      <option value="MA">MA</option>
+      <option value="MT">MT</option>
+      <option value="MS">MS</option>
+      <option value="MG">MG</option>
+      <option value="PA">PA</option>
+      <option value="PB">PB</option>
+      <option value="PR">PR</option>
+      <option value="PE">PE</option>
+      <option value="PI">PI</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+      <option value="RS">RS</option>
+      <option value="RO">RO</option>
+      <option value="RR">RR</option>
+      <option value="SC">SC</option>
+      <option value="SP">SP</option>
+      <option value="SE">SE</option>
+      <option value="TO">TO</option>
+      <option value="DF">DF</option>
+      </select>
+
+      <select name="cargo" required>
+        <option value="">Selecione um cargo</option>
+        <option value="gerente">Gerente</option>
+        <option value="supervisor">Supervisor</option>
+        <option value="funcionario">Funcionário</option>
+      </select>
+      <input type="submit" value="Cadastrar">
+    </form>
+  </div>
+</body>
+</html>
